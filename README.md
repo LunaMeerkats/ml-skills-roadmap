@@ -1,164 +1,179 @@
-# AI/ML Course
+# **Stage 1 — Foundations (Weeks 1–4)**
 
-## **Stage 1 — Foundations (Weeks 1–4)**
+## **Week 1 – NumPy/pandas (Py) + STL basics (C++)**
 
-**Week 1 – NumPy & pandas**
-
-| Day | Focus           | Task                                                 |
-| --- | --------------- | ---------------------------------------------------- |
-| Mon | NumPy arrays    | Read docs, practice creation, indexing, broadcasting |
-| Tue | NumPy ops       | Work through 20–30 exercises                         |
-| Wed | pandas basics   | Series, DataFrame creation, indexing, selection      |
-| Thu | pandas ops      | groupby, merge, sort, apply                          |
-| Fri | pandas cleaning | missing values, duplicates                           |
-| Sat | Project         | Clean messy CSV from Kaggle                          |
-| Sun | Review          | Revisit errors & write notes                         |
-
-**Week 2 – Matplotlib & Seaborn**
-
-| Day | Focus               | Task                                       |
-| --- | ------------------- | ------------------------------------------ |
-| Mon | Matplotlib basics   | line, scatter, bar charts                  |
-| Tue | Customizing plots   | titles, labels, legends                    |
-| Wed | Seaborn basics      | distplot, pairplot, heatmap                |
-| Thu | Statistical visuals | boxplot, violinplot                        |
-| Fri | Combine plots       | Matplotlib + Seaborn in same fig           |
-| Sat | Project             | Visualization notebook from Week 1 dataset |
-| Sun | Review              | Share notebook on GitHub                   |
-
-**Week 3 – SQL**
-
-| Day | Focus             | Task                            |
-| --- | ----------------- | ------------------------------- |
-| Mon | SELECT & WHERE    | practice queries                |
-| Tue | Aggregations      | COUNT, SUM, AVG, GROUP BY       |
-| Wed | Joins             | INNER, LEFT, RIGHT              |
-| Thu | Subqueries & CASE | practice logic                  |
-| Fri | Window functions  | ROW\_NUMBER, RANK               |
-| Sat | Project           | Answer business Qs from mock DB |
-| Sun | Review            | Document queries in Markdown    |
-
-**Week 4 – Statistics & Cleaning**
-
-| Day | Focus              | Task                         |
-| --- | ------------------ | ---------------------------- |
-| Mon | Descriptive stats  | mean, median, variance       |
-| Tue | Hypothesis testing | t-tests, chi-square          |
-| Wed | Correlation        | Pearson, Spearman            |
-| Thu | Outlier handling   | z-score, IQR                 |
-| Fri | Scaling            | StandardScaler, MinMaxScaler |
-| Sat | Project            | Blog-style EDA + stats       |
-| Sun | Review             | Share blog on portfolio site |
+| Day | Python                                    | C++                                   |
+| --- | ----------------------------------------- | ------------------------------------- |
+| Mon | NumPy arrays: creation, indexing, slicing | STL `vector`, loops, I/O basics       |
+| Tue | NumPy broadcasting, math ops              | STL `map`, iterators, range-based for |
+| Wed | pandas Series, DataFrame creation         | Read CSV into C++ (ifstream)          |
+| Thu | pandas selection, filtering               | Parse CSV into vectors/maps           |
+| Fri | pandas groupby, aggregation               | Simple aggregation (sum, avg)         |
+| Sat | **Project:** CSV stats summary in pandas  | **Project:** Same in C++ STL          |
+| Sun | Review + push to GitHub                   | Review + push to GitHub               |
 
 ---
 
-## **Stage 2 — Core Machine Learning (Weeks 5–8)**
+## **Week 2 – Matplotlib/Seaborn (Py) + OpenCV plotting (C++)**
 
-**Week 5 – scikit-learn basics**
-
-| Day | Focus              | Task                          |
-| --- | ------------------ | ----------------------------- |
-| Mon | Regression         | LinearRegression example      |
-| Tue | Classification     | LogisticRegression example    |
-| Wed | Data splitting     | train\_test\_split, k-fold CV |
-| Thu | Pipelines          | preprocessing + model         |
-| Fri | Evaluation metrics | RMSE, MAE, R²                 |
-| Sat | Project            | Housing price model           |
-| Sun | Review             | Push to GitHub                |
-
-**Week 6 – Model selection & tuning**
-
-| Day | Focus                  | Task                            |
-| --- | ---------------------- | ------------------------------- |
-| Mon | Classification metrics | accuracy, precision, recall, F1 |
-| Tue | ROC/AUC                | plot & interpret                |
-| Wed | Hyperparameter tuning  | GridSearchCV                    |
-| Thu | RandomizedSearchCV     | speed vs accuracy               |
-| Fri | Feature selection      | SelectKBest, RFE                |
-| Sat | Project                | Spam classifier                 |
-| Sun | Review                 | Compare models                  |
-
-**Week 7 – PyTorch/TensorFlow**
-
-| Day | Focus              | Task                   |
-| --- | ------------------ | ---------------------- |
-| Mon | Tensors            | creation, ops          |
-| Tue | NN basics          | define layers          |
-| Wed | Training loops     | forward, backward      |
-| Thu | Loss & optimizers  | SGD, Adam              |
-| Fri | Datasets & loaders | torchvision/mnist      |
-| Sat | Project            | MNIST image classifier |
-| Sun | Review             | Save & load model      |
-
-**Week 8 – Model deployment basics**
-
-| Day | Focus          | Task                      |
-| --- | -------------- | ------------------------- |
-| Mon | FastAPI basics | endpoints                 |
-| Tue | Model serving  | load + predict            |
-| Wed | Docker basics  | build/run containers      |
-| Thu | Dockerize API  | expose port               |
-| Fri | Test locally   | curl or Postman           |
-| Sat | Project        | Deploy spam classifier    |
-| Sun | Review         | Push Dockerfile to GitHub |
+| Day | Python                             | C++                          |
+| --- | ---------------------------------- | ---------------------------- |
+| Mon | Matplotlib: line, bar, scatter     | OpenCV: image load, display  |
+| Tue | Matplotlib customizations          | OpenCV: draw shapes, text    |
+| Wed | Seaborn distplot, pairplot         | OpenCV: histograms           |
+| Thu | Seaborn heatmap, boxplot           | OpenCV: color space changes  |
+| Fri | Combine Matplotlib + Seaborn       | Combine OpenCV plot overlays |
+| Sat | **Project:** Data histograms in Py | **Project:** Same in OpenCV  |
+| Sun | Review + share notebook            | Review + commit C++ code     |
 
 ---
 
-## **Stage 3 — Data Engineering & MLOps (Weeks 9–12)**
+## **Week 3 – SQL (Py) + SQLite C++ API**
 
-**Week 9 – Apache Spark**
-
-| Day | Focus           | Task                       |
-| --- | --------------- | -------------------------- |
-| Mon | Install & setup | local Spark or Databricks  |
-| Tue | DataFrames      | read CSV, schema, show     |
-| Wed | Transformations | filter, select, withColumn |
-| Thu | Aggregations    | groupBy, agg               |
-| Fri | Joins           | inner, left                |
-| Sat | Project         | Analyze 1M+ row dataset    |
-| Sun | Review          | Document in notebook       |
-
-**Week 10 – Airflow/Prefect**
-
-| Day | Focus           | Task                         |
-| --- | --------------- | ---------------------------- |
-| Mon | Install & setup | Airflow or Prefect           |
-| Tue | DAG basics      | tasks, dependencies          |
-| Wed | Operators       | PythonOperator, BashOperator |
-| Thu | Scheduling      | cron expressions             |
-| Fri | Trigger rules   | dynamic DAGs                 |
-| Sat | Project         | Automated ETL + retrain      |
-| Sun | Review          | Push DAG to GitHub           |
-
-**Week 11 – MLflow**
-
-| Day | Focus           | Task                   |
-| --- | --------------- | ---------------------- |
-| Mon | Install & setup | MLflow tracking server |
-| Tue | Log params      | experiments            |
-| Wed | Log metrics     | evaluation             |
-| Thu | Save artifacts  | models, plots          |
-| Fri | Compare runs    | MLflow UI              |
-| Sat | Project         | Track Week 7 model     |
-| Sun | Review          | Push logs & notes      |
-
-**Week 12 – Cloud Deployment**
-
-| Day | Focus             | Task                               |
-| --- | ----------------- | ---------------------------------- |
-| Mon | AWS/GCP setup     | IAM, bucket, CLI                   |
-| Tue | Deploy model      | SageMaker/Vertex                   |
-| Wed | Endpoint testing  | API calls                          |
-| Thu | Monitoring basics | logs, alerts                       |
-| Fri | CI/CD             | auto-deploy via GitHub Actions     |
-| Sat | Final Project     | End-to-end ML pipeline in cloud    |
-| Sun | Review            | Portfolio polish & LinkedIn update |
+| Day | Python                            | C++                                 |
+| --- | --------------------------------- | ----------------------------------- |
+| Mon | `sqlite3` basics: SELECT, WHERE   | SQLite C API: connect, SELECT       |
+| Tue | Aggregations, GROUP BY            | Execute aggregation queries         |
+| Wed | Joins                             | Joins in SQLite C API               |
+| Thu | Subqueries, CASE                  | Implement subqueries                |
+| Fri | Window functions                  | Explore window queries              |
+| Sat | **Project:** Query sales DB in Py | **Project:** Same in C++ SQLite API |
+| Sun | Review & doc queries              | Review & doc queries                |
 
 ---
 
-### **Tips to Keep Momentum**
+## **Week 4 – Statistics & Preprocessing (Py) + Eigen (C++)**
 
-* **1 project/week** → forces you to apply what you learned.
-* Push *everything* to GitHub → future employers see progress.
-* Write short LinkedIn posts when you finish each project → builds your presence.
-* Keep a single “Portfolio README” linking all projects.
+| Day | Python                                     | C++                        |
+| --- | ------------------------------------------ | -------------------------- |
+| Mon | Mean, median, variance                     | Eigen: matrix basics       |
+| Tue | Hypothesis testing                         | Eigen: matrix math         |
+| Wed | Correlation analysis                       | Eigen: correlation calc    |
+| Thu | Outlier detection                          | Z-score in Eigen           |
+| Fri | Scaling features                           | MinMax scaling in Eigen    |
+| Sat | **Project:** Normalization in scikit-learn | **Project:** Same in Eigen |
+| Sun | Review & blog write-up                     | Review & push code         |
+
+---
+
+# **Stage 2 — Core ML (Weeks 5–8)**
+
+## **Week 5 – scikit-learn (Py) + mlpack (C++)**
+
+| Day | Python                             | C++                                 |
+| --- | ---------------------------------- | ----------------------------------- |
+| Mon | Linear regression                  | mlpack: regression                  |
+| Tue | Logistic regression                | mlpack: logistic regression         |
+| Wed | Classification basics              | mlpack: decision tree               |
+| Thu | Pipelines                          | mlpack: preprocess + model          |
+| Fri | Metrics (RMSE, R²)                 | Manual metric calc                  |
+| Sat | **Project:** Spam classifier in Py | **Project:** Spam classifier in C++ |
+| Sun | Review & compare results           | Review & compare results            |
+
+---
+
+## **Week 6 – Model tuning**
+
+| Day | Python                           | C++                               |
+| --- | -------------------------------- | --------------------------------- |
+| Mon | Accuracy, precision, recall      | Manual metrics in C++             |
+| Tue | ROC/AUC plotting                 | ROC calc in C++                   |
+| Wed | GridSearchCV                     | Manual param sweep                |
+| Thu | RandomizedSearchCV               | Random param sweep                |
+| Fri | Feature selection                | Feature selection in C++          |
+| Sat | **Project:** Tuned classifier Py | **Project:** Tuned classifier C++ |
+| Sun | Review & compare                 | Review & compare                  |
+
+---
+
+## **Week 7 – PyTorch (Py) + LibTorch (C++)**
+
+| Day | Python                           | C++                                    |
+| --- | -------------------------------- | -------------------------------------- |
+| Mon | Tensors & ops                    | LibTorch tensors                       |
+| Tue | Define NN                        | LibTorch: define NN                    |
+| Wed | Training loop                    | LibTorch: forward, backward            |
+| Thu | Optimizers                       | LibTorch: SGD/Adam                     |
+| Fri | Datasets/loaders                 | LibTorch: dataset API                  |
+| Sat | **Project:** MNIST classifier Py | **Project:** Load trained model in C++ |
+| Sun | Review & compare perf            | Review & compare perf                  |
+
+---
+
+## **Week 8 – Deployment basics**
+
+| Day | Python                             | C++                                |
+| --- | ---------------------------------- | ---------------------------------- |
+| Mon | FastAPI basics                     | gRPC basics                        |
+| Tue | Serve model                        | Serve model                        |
+| Wed | Docker basics                      | Docker basics                      |
+| Thu | Dockerize API                      | Dockerize C++ service              |
+| Fri | Test API                           | Test gRPC                          |
+| Sat | **Project:** Deploy spam model API | **Project:** Deploy gRPC inference |
+| Sun | Review & polish                    | Review & polish                    |
+
+---
+
+# **Stage 3 — Big Data, MLOps & Cloud (Weeks 9–12)**
+
+## **Week 9 – Spark (Py) + Multithreading (C++)**
+
+| Day | Python                        | C++                              |
+| --- | ----------------------------- | -------------------------------- |
+| Mon | PySpark setup                 | std::thread basics               |
+| Tue | PySpark DataFrames            | Threaded loop                    |
+| Wed | PySpark transforms            | Thread-safe data structures      |
+| Thu | PySpark aggregations          | Parallel aggregations            |
+| Fri | PySpark joins                 | Parallel joins                   |
+| Sat | **Project:** Process 1M+ rows | **Project:** Same in C++ threads |
+| Sun | Review & doc                  | Review & doc                     |
+
+---
+
+## **Week 10 – Airflow (Py) + CLI Automation (C++)**
+
+| Day | Python                           | C++                         |
+| --- | -------------------------------- | --------------------------- |
+| Mon | Airflow setup                    | CLI arg parsing             |
+| Tue | DAG basics                       | Shell command execution     |
+| Wed | Operators                        | File manipulation           |
+| Thu | Scheduling                       | Timed jobs                  |
+| Fri | Dynamic DAGs                     | Config files                |
+| Sat | **Project:** ML retrain pipeline | **Project:** CLI job runner |
+| Sun | Review & commit                  | Review & commit             |
+
+---
+
+## **Week 11 – MLflow (Py) + Logging (C++)**
+
+| Day | Python                            | C++                       |
+| --- | --------------------------------- | ------------------------- |
+| Mon | MLflow setup                      | Logging basics            |
+| Tue | Log params                        | Log to file               |
+| Wed | Log metrics                       | Log metrics to file       |
+| Thu | Save artifacts                    | Save binary outputs       |
+| Fri | Compare runs                      | Compare logs              |
+| Sat | **Project:** MLflow experiment Py | **Project:** Log C++ runs |
+| Sun | Review & share                    | Review & share            |
+
+---
+
+## **Week 12 – Cloud deployment**
+
+| Day | Python                                                         | C++                   |
+| --- | -------------------------------------------------------------- | --------------------- |
+| Mon | AWS/GCP setup                                                  | Cross-compile for ARM |
+| Tue | Deploy to SageMaker                                            | Deploy to Jetson/RPi  |
+| Wed | API test                                                       | API test              |
+| Thu | Monitoring basics                                              | Health checks         |
+| Fri | CI/CD basics                                                   | Auto-build scripts    |
+| Sat | **Final Project:** End-to-end pipeline (Py train → C++ deploy) | Integrate with cloud  |
+| Sun | Final polish                                                   | Final polish          |
+
+---
+
+## 🔹 Extra Notes
+
+* **Daily Git pushes** → Keep Python & C++ repos separate but linked in a README.
+* **Language switching rule:** Always code the Python version first for clarity, then port to C++.
+* **Performance checks:** Whenever possible, time both implementations.
